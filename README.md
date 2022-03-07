@@ -1,10 +1,10 @@
 # App Review Analysis
 
-The purpose of this project is to explore HuggingFace's app_reviews dataset. Click [here] (https://huggingface.co/datasets/app_reviews) to explore the source data. 
+The purpose of this project is to explore HuggingFace's app_reviews dataset. Click [here](https://huggingface.co/datasets/app_reviews) to explore the source data. 
 
 ## Getting Started
 
-Setting up your project in a docker container is the easiest way to ensure no package versioning conflicts with your environment. For this project, I used the **jupyter/tensorflow-notebook** image which can be found [here] (https://hub.docker.com/r/jupyter/tensorflow-notebook)
+Setting up your project in a docker container is the easiest way to ensure no package versioning conflicts with your environment. For this project, I used the **jupyter/tensorflow-notebook** docker image which can be found [here](https://hub.docker.com/r/jupyter/tensorflow-notebook)
 
 1. docker pull jupyter/tensorflow-notebook
 2. docker volume create --name *project-name*
