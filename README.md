@@ -6,6 +6,7 @@ The purpose of this project is to explore HuggingFace's app_reviews dataset. Cli
 
 Setting up your project in a docker container is the easiest way to ensure no package versioning conflicts with your environment. For this project, I used the **jupyter/tensorflow-notebook** docker image which can be found [here](https://hub.docker.com/r/jupyter/tensorflow-notebook)
 
+```bash
 1. docker pull jupyter/tensorflow-notebook
 2. docker volume create --name *project-name*
 3. docker run -it -d -v *project-name*:/home/*project-name* -p 8888:8888 jupyter/tensorflow-notebook
@@ -16,6 +17,7 @@ Setting up your project in a docker container is the easiest way to ensure no pa
 8. git clone https://github.com/Chike-Ode/app-review-nlp.git
 9. pip install -r requirements.txt
 10. naviguate the notebooks directory for detailed analysis
+```
 
 ## Project Structure
 
@@ -23,11 +25,8 @@ Setting up your project in a docker container is the easiest way to ensure no pa
 ├── LICENSE
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
+│   ├── output         <- Contains scored reviews for each model.
+│   └── raw            <- The original data dump split into training, testing and validation.
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
@@ -37,7 +36,7 @@ Setting up your project in a docker container is the easiest way to ensure no pa
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │
-├── images
+├── images             <- EDA plots and DL model performance loss function
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
@@ -48,5 +47,9 @@ Setting up your project in a docker container is the easiest way to ensure no pa
 │   └── utils.py       <- Scripts to download or generate data
 │   
 │
-└── evaluation            <- tox file with settings for running tox; see tox.readthedocs.io
+│── evaluation         <- Evaluate model performance
+│   ├── graphs         <- Series of graphs for the performance of the models.
+│   │
+│   └── performance    <- CSV file tracking performance of each model.
+```
 
