@@ -19,7 +19,7 @@ Setting up your project in a docker container is the easiest way to ensure no pa
 
 ## Project Structure
 
-
+```bash
 ├── LICENSE
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
