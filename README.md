@@ -17,3 +17,14 @@ Setting up your project in a docker container is the easiest way to ensure no pa
 9. pip install -r requirements.txt
 10. naviguate the notebooks directory for detailed analysis
 
+## Project Structure
+
+.
+├── build                   # Compiled files (alternatively `dist`)
+├── docs                    # Documentation files (alternatively `doc`)
+├── src                     # Source files (alternatively `lib` or `app`)
+├── test                    # Automated tests (alternatively `spec` or `tests`)
+├── tools                   # Tools and utilities
+├── LICENSE
+└── README.md
+
