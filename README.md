@@ -36,7 +36,7 @@ Setting up your project in a docker container is the easiest way to ensure no pa
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │
-├── images             <- EDA plots and DL model performance loss function
+├── images             <- EDA plots and DL model framework.
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
